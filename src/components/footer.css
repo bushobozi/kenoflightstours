@@ -1,0 +1,148 @@
+.footer {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: rgb(9, 9, 8);
+      margin-top: -55px;
+}
+
+.foot_container {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+}
+
+.footer_container_grid_3 {
+      display: grid;
+      grid-template-columns: 60% 20% 20%;
+      padding-top: 100px;
+      padding: 1rem;
+      margin: 0 auto;
+      width: 1200px;
+}
+
+.footer_item {
+      display: block;
+      position: relative;
+      padding: 1rem;
+}
+
+.footer_item h1 a {
+      display: block;
+      position: relative;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 7rem;
+      color: #f1f1f1;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+}
+
+
+.footer_item h2 {
+      display: block;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      color: #f1f1f1;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-weight: 700;
+}
+
+.footer_item h2::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background: #560404;
+}
+
+.footer_item h3 a {
+      display: block;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: #f1f1f1;
+      font-weight: 200;
+      text-decoration: none;
+      transition: 0.2s ease;
+}
+
+.footer_item h3 a:hover {
+      /*font-family: 'Bricolage Grotesque', sans-serif;*/
+      color: #3c9e64;
+      transition: 0.2s ease-in;
+}
+
+.copy_r {
+      position: relative;
+      display: block;
+}
+
+.copy_r::before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #560404;
+}
+
+.copy_r p {
+      display: block;
+      position: relative;
+      font-family: 'Manrop', sans-serif;
+      font-size: 16px;
+      color: #f1f1f1d6;
+      font-weight: 100;
+      transition: 0.2s ease;
+      text-transform: uppercase;
+      padding: 0 10px;
+}
+
+
+@media screen and (max-width: 1230px) {
+      .footer_container_grid_3 {
+            width: auto;
+      }
+}
+
+@media screen and (max-width : 900px){
+      .footer_container_grid_3 {
+            display: block;
+      }
+      .footer_item h1 a {
+            font-size: 5rem;
+      }
+}
+
+@media screen and (max-width: 600px) {
+      .footer_container_grid_3 {
+            display: block;
+      }
+}
+
+@media screen and (max-width: 550px) {
+      .footer_item h1 a {
+            font-size: 5rem;
+      }
+      .copy_r p {
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+      }
+}
+
+@media screen and (max-width: 260px) {
+      .footer_item h1 a {
+            font-size: 3.5rem;
+      }
+}

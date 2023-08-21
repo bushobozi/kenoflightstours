@@ -1,0 +1,327 @@
+.dest_container {
+      width: auto;
+      height: auto;
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      background: #f1f1f1;
+}
+
+.dest_img_bg-40 {
+      width: 100%;
+      height: 50vh;
+      display: block;
+      position: relative;
+      top: 0;
+      background: url("../lake.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+.dest_container_grid_two {
+      width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      padding-top: 1rem;
+}
+
+.cont_grid_thr_i {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 10px;
+}
+
+.dest_nam, .dest_des_p {
+      padding: 0.5rem;
+}
+
+.dest_nam_p h1 {
+      display: block;
+      position: relative;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 2.5rem;
+      color: rgb(105, 29, 18);
+      font-weight: 700;
+      top: 0px;
+      left: 0;
+      text-transform: uppercase;
+}
+
+.dest_nam_p img {
+      position: relative;
+      left: -20px;
+      width: 100%;
+      height: auto;
+      display: block;
+}
+
+.dest_nam h1 {
+      display: block;
+      position: relative;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 2.5rem;
+      color: olivedrab;
+      font-weight: 700;
+      top: 0px;
+      left: -10%;
+      text-transform: uppercase;
+}
+
+.dest_des_p p {
+      display: block;
+      position: relative;
+      font-family: 'Manrope', sans-serif;
+      font-size: 18px;
+      color: #0e0e0ecc;
+      font-weight: normal;
+}
+
+.dest_container_img_bg {
+      width: 100%;
+      display: block;
+      position: relative;
+      padding-bottom: 5rem;
+}
+
+img.d_bg {
+      width: 100%;
+}
+
+.desT_links {
+      padding: 0 1rem;
+      margin: 10px;
+      border: 1px solid chocolate;
+      position: relative;
+      top: 0;
+      left: -10%;
+      background: chocolate;
+}
+
+.desT_links p a {
+      color: #f1f1f1b4;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      position: relative;
+      left: 25%;
+}
+
+.desT_links_p {
+      padding: 0 1rem;
+      margin: 10px;
+      border: 1px solid chocolate;
+      position: relative;
+      top: 0;
+      left: 0;
+      background: chocolate;
+}
+
+.desT_links_p p a {
+      color: #f1f1f1b4;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      position: relative;
+      left: 25%;
+}
+
+.desT_links p a:hover, .desT_links_p p a:hover {
+      transition: all 0.2s ease-in-out;
+      color: #fff;
+}
+
+.package_grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 1rem;
+      border-bottom: 1px solid #0e0e0ecc;
+}
+
+.package_grid:nth-child(2) {
+      margin-top: 5rem;
+      border-bottom: none;
+}
+
+.package_item {
+      display: block;
+      position: relative;
+      left: 0;
+      right: 0;
+      padding: 10px;
+}
+
+.vid_p video {
+      width: 100%;
+}
+
+h1.h_pack {
+      display: block;
+      position: relative;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 30px;
+      color: #0e0e0ecc;
+      font-weight: normal;
+      text-transform: uppercase;
+}
+
+h1.h_pack::after {
+      display: block;
+      position: relative;
+      background: #0e0e0ecc;
+      font-weight: normal;
+      text-transform: uppercase;
+      content: "";
+      width: 100px;
+      height: 2px;
+}
+
+h1.h_pack_2 {
+      display: block;
+      position: relative;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 20px;
+      color: #092e0bcc;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-weight: 700;
+}
+
+h1.h_pack_3 {
+      display: block;
+      position: relative;
+      top: -150px;
+      left: 0;
+      font-family: 'Oswald', sans-serif;
+      font-size: 12rem;
+      color: #0e0e0e9f;
+      font-weight: normal;
+      text-transform: uppercase;
+}
+
+h1.h_pack_3_1 {
+      display: block;
+      position: relative;
+      top: -150px;
+      left: 0;
+      font-family: 'Oswald', sans-serif;
+      font-size: 6rem;
+      color: #0e0e0e9f;
+      font-weight: normal;
+      text-transform: uppercase;
+}
+
+.rate_s span {
+      color: rgb(255, 68, 0);
+      padding: 5px;
+      font-size: 200%;
+}
+
+@media screen and (max-width: 1030px) {
+      .dest_container_grid_two {
+            width: auto;
+            margin: 0;
+            padding: 0 30px;
+      }
+      .dest_des_p p {
+            padding: 0;
+      }
+      .dest_nam h1 {
+            position: relative;
+            top: 0;
+            left: 0;
+            font-size: 3rem;
+      }
+      .desT_links {
+            left: 0;
+      }
+      .cont_grid_thr_i {
+            padding: 0;
+            padding-top: 25px;
+      }
+      .galery_img_item p {
+            font-size: 7rem;
+      }
+      .dest_nam_p h1 {
+            font-size: 2rem;
+      }
+      h1.h_pack_3 {
+            font-size: 10rem;
+      }
+}
+
+@media  screen and (max-width: 770px) {
+      .dest_img_bg-40 {
+            width: 100%;
+            height: 35vh;
+      }
+      .dest_des_p p {
+            padding: 0;
+            font-size: 16px;
+      }
+      .dest_container_grid_two {
+            display: block;
+            margin-top: -30px;
+      }
+      .dest_nam_p img {
+            left: 0;
+            width: 50%;
+      }
+      .package_grid {
+            margin-top: -18em;
+      }
+      .dest_des_p p a {
+            left: 0;
+      }
+}
+
+@media screen and (max-width: 610px) {
+      .dest_img_bg-40 {
+            width: 100%;
+            height: 35vh;
+            top: -50px;
+      }
+}
+
+@media screen and (max-width: 550px) {
+      .dest_container_grid_two {
+            padding: 8px;
+      }
+      .dest_nam_p img {
+            left: 0;
+            width: 100%;
+      }
+      .package_grid {
+            display: block;
+            padding: 10px;
+            margin-top: -15rem;
+      }
+      .dest_container_img_bg {
+            padding-bottom: 5.5rem;
+      }
+      .desT_links_p p a {
+            font-size: 1.3rem;
+            left: 5%;
+      }
+      h1.h_pack {
+            font-size: 20px;
+      }
+}
+
+@media screen and (max-width: 260px) {
+      .dest_nam h1 {
+            position: relative;
+            top: 0;
+            left: 0;
+            font-size: 1.5rem;
+      }
+}

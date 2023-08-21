@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC:wght@700&family=Anton&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Dancing+Script:wght@700&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:wght@600&family=Poiret+One&family=Poppins:wght@300&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+*::before, *::after {
+      box-sizing: border-box;
+      overflow: hidden;
+}
+
+body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+.container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+}
+
+
+
+.nav {
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      padding: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 2000;
+      border-bottom: 1px solid #f1f1f1;
+}
+
+.nav img {
+      width: auto;
+      position: relative;
+      height: 13.3vh;
+      display: block;
+      z-index: 20;
+      left: 2%;
+      top: 0;
+}
+
+a.site-title {
+      position: relative;
+      display: block;
+}
+
+.logo {
+      display: block;
+      color: #f1f1f1;
+      position: fixed;
+      left: 0;
+      top: 0;
+      font-size: 5rem;
+      z-index: 2200;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 20px;
+}
+
+.nav ul {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      gap: 0;
+}
+
+.nav a {
+      font-size: 14px;
+      color: #f1f1f1;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      margin: 8px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      position: relative;
+      top: 0;
+      left: 0;
+}
+
+/*.nav li.active {
+      background-color: #0e0e0e16;
+      border-radius: 5em;
+}*/
+
+.nav li.active::after {
+      display: block;
+      position: relative;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #f1f1f1;
+      left: 0;
+      transition: 0.3s ease-in;
+}
+
+.nav li:hover{
+      color: olivedrab;
+}
+
+.socials_ri a {
+      position: relative;
+      display: block;
+      left: 70%;
+      top: 0;
+      float: left;
+      text-transform: uppercase;
+      margin: 8px;
+      padding: 5px;
+}
+
+.socials_ri a:nth-child(1)::after {
+      display: block;
+      position: relative;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: green;
+      left: 0;
+      top: 15px;
+      transition: 0.3s ease-in;
+}
+
+.socials_ri a:nth-child(2)::after {
+      display: block;
+      position: relative;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: blue;
+      left: 0;
+      top: 15px;
+      transition: 0.3s ease-in;
+}
+
+.hero__vid video {
+      width: 100%;
+}
+
+.toggle_menu svg {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 18.5rem;
+      cursor: pointer;
+      border: 1px solid #f1f1f1;
+      background: #0e0e0e54;
+      border-radius: 5rem;
+      padding: 10px;
+}
+
+.toggle_menu {
+      display: none;
+}
+
+
+
+@media screen and (max-width:1250px) {
+      .logo {
+            font-size: 2rem;
+      }
+      .socials_ri a {
+            left: 0;
+      }
+      .nav {
+            border-bottom: none;
+      }
+      .nav img {
+            height: 5.2vh;
+      }
+}
+
+
+@media screen and (max-width:990px) {
+      .toggle_menu {
+            display: block;
+            color: rgb(255, 255, 255);
+            position: fixed;
+            z-index: 22;
+            right: 0;
+            padding: 8px;
+            box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+      }
+      
+      .toggle_nav {
+            width: auto;
+            left: 0;
+            background: #c25609;
+            height: auto;
+            border-radius: 15px;
+            position: relative;
+            display: block;
+            top: 25px;
+            padding: 1rem 2rem;
+      }
+      
+      .nav-links li {
+            padding: 8px;
+            position: relative;
+            list-style: none;
+            padding-top: 25px;
+      }
+      
+      .nav-links li a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 0 8px;
+            padding-top: 25px;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            color: #f1f1f1;
+      }
+      
+      .nav {
+            display: none;
+      }
+      .nav ul {
+            display: none;
+      }
+      .nav img {
+            display: none;
+      }
+
+}
+
+@media screen and (max-width: 260px){
+      .nav-links li a {
+            overflow: scroll;
+            font-size: 14px;
+            margin-left: 100px;
+      }
+}
